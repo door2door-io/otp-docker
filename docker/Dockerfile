@@ -11,7 +11,7 @@ RUN apt-get install -y wget
 #OTP
 RUN mkdir /otp
 WORKDIR /otp
-RUN wget http://maven.conveyal.com.s3.amazonaws.com/org/opentripplanner/otp/0.19.0/otp-0.19.0-shaded.jar
+RUN wget https://s3.eu-central-1.amazonaws.com/d2d-otp/otp-0.20.0-SNAPSHOT.jar
 
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
