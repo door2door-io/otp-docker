@@ -8,6 +8,16 @@ RUN apt-get -qqy install zulu-8=8.9.0.4
 RUN apt-get install -y wget
 
 
+RUN echo "[Credentials]" > ~/.boto
+RUN echo "aws_access_key_id=$AWS_ACCESS_KEY_ID" >>  ~/.boto
+RUN echo "aws_secret_access_key=$AWS_SECRET_ACCESS_KEY" >>  ~/.boto
+
+RUN curl https://gist.githubusercontent.com/shevron/6204349/raw/cw-monitor-memusage.py | sudo tee /usr/local/bin/cw-monitor-memusage.py
+
+RUN chmod +x /usr/local/bin/cw-monitor-memusage.py
+RUN echo "* * * * * ec2-user /usr/local/bin/cw-monitor-memusage.py" | sudo tee /etc/cron.d/cw-monitor-memusage
+
+
 #OTP
 RUN mkdir /otp
 WORKDIR /otp
