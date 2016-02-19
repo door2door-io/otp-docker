@@ -1,4 +1,4 @@
 #!/bin/bash
 
-java -Xmx8G -jar otp-0.19.0.jar --server --insecure
+java -Xmx8G -jar otp-0.20.1-ROUTERCONFIG.jar --server --insecure
 
