@@ -7,11 +7,10 @@ RUN apt-get -qq update
 RUN apt-get -qqy install zulu-8=8.9.0.4
 RUN apt-get install -y wget
 
-
 #OTP
 RUN mkdir /otp
 WORKDIR /otp
-RUN wget https://s3.eu-central-1.amazonaws.com/d2d-otp/otp-0.20.0-SNAPSHOT.jar
+RUN wget -O otp-0.20.1-ROUTERCONFIG.jar https://s3.eu-central-1.amazonaws.com/d2d-otp/otp-0.20.1-ROUTERCONFIG.jar
 
 ADD run.sh /run.sh
 RUN chmod +x /*.sh

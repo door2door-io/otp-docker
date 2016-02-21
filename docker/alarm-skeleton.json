@@ -1,0 +1,22 @@
+{
+    "AlarmName": "OTP-Region-Name Memory Usage High",
+    "AlarmDescription": "Memory Usage >= 90%",
+    "ActionsEnabled": true,
+    "AlarmActions": [
+        "arn:aws:sns:eu-central-1:361548929584:GIS-TEAM"
+    ],
+    "MetricName": "MemoryUtilization",
+    "Namespace": "System/Linux",
+    "Statistic": "Average",
+    "Dimensions": [
+        {
+            "Name": "InstanceId",
+            "Value": "i-d335e56e"
+        }
+    ],
+    "Period": 300,
+    "Unit": "Percent",
+    "EvaluationPeriods": 1,
+    "Threshold": 90.0,
+    "ComparisonOperator": "GreaterThanOrEqualToThreshold"
+}
