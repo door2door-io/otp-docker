@@ -34,7 +34,7 @@ one first.
 To see which environments are available, type `eb list`.
 
 ### Cloning an environment:
-Select the desired environment to clone via `eb use <ENVIRONMENT-NAME` and then
+Select the desired environment to clone via `eb use <ENVIRONMENT-NAME>` and then
 type `eb clone`.
 You will be asked about the name, cname and other things about your new environment.
 Finally the environment will be created.
