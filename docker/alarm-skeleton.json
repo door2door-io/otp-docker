@@ -1,5 +1,5 @@
 {
-    "AlarmName": "OTP-Region-Name Memory Usage High",
+    "AlarmName": "OTP-Internal Denmark Memory Usage High",
     "AlarmDescription": "Memory Usage >= 90%",
     "ActionsEnabled": true,
     "AlarmActions": [
@@ -11,7 +11,7 @@
     "Dimensions": [
         {
             "Name": "InstanceId",
-            "Value": "i-d335e56e"
+            "Value": "i-8d078e31"
         }
     ],
     "Period": 300,

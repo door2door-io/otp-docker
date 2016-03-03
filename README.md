@@ -43,6 +43,15 @@ Finally the environment will be created.
 If you want to configure more things, create a new environment via `eb init` and
 `eb create <ENVIRONMENT-NAME>`.
 
+### Post creation checks:
+
+After you either cloned or created a new environment, check that you are using
+the correct one:
+
+```
+$ eb list # lists all environments, the one in use is prefixed with a *
+$ eb use <ENVIRONMENT-NAME> # if you need to switch the environment
+```
 
 ### Ready to deploy!
 
