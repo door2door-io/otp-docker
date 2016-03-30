@@ -12,6 +12,7 @@ RUN mkdir /otp
 WORKDIR /otp
 RUN wget -O otp-0.20.1-ROUTERCONFIG.jar https://s3.eu-central-1.amazonaws.com/d2d-otp/otp-0.20.1-ROUTERCONFIG.jar
 
+ADD logback.xml /otp/logback.xml
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 EXPOSE 8080
