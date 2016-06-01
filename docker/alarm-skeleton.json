@@ -1,17 +1,15 @@
 {
-    "AlarmName": "OTP-Internal Denmark Memory Usage High",
+    "AlarmName": "Some Alarm Name",
     "AlarmDescription": "Memory Usage >= 90%",
     "ActionsEnabled": true,
-    "AlarmActions": [
-        "arn:aws:sns:eu-central-1:361548929584:GIS-TEAM"
-    ],
+    "AlarmActions": [],
     "MetricName": "MemoryUtilization",
     "Namespace": "System/Linux",
     "Statistic": "Average",
     "Dimensions": [
         {
             "Name": "InstanceId",
-            "Value": "i-8d078e31"
+            "Value": ""
         }
     ],
     "Period": 300,
