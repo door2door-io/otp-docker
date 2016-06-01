@@ -77,8 +77,8 @@ There are 3 small steps involved in this:
 1. Get the instance id of your instance: The command `eb status -v` prints the instance id to your console. You can copy it.
 
 2. Edit the file `alarm-skeleton.json`:
-   You should probably rename the alarm and enter the instance id in the corresponding
-   field.
+   You should probably rename the alarm, enter the instance id in the corresponding
+   field and set the alarm action.
 
 3. Create the alarm via your terminal: Now that the `alarm-skeleton.json` is prepared, you can create the alarm via
 
