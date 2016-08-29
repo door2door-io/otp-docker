@@ -1,4 +1,3 @@
 #!/bin/bash
 
-java -Dlogback.configurationFile=/otp/logback.xml -Xmx7G -jar otp-0.20.1-ROUTERCONFIG.jar --server --insecure
-
+java -Dlogback.configurationFile=/otp/logback.xml -Xmx3G -jar otp-1.0.0-SNAPSHOT.jar --server --insecure
