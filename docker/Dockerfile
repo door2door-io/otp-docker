@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 MAINTAINER Marcel Radischat <marcel@door2door.io>
 
 RUN apk update
-RUN apk add wget ca-certificates bashd
+RUN apk add wget ca-certificates bash
 RUN update-ca-certificates
 
 #OTP
