@@ -1,15 +1,15 @@
 {
-    "AlarmName": "Some Alarm Name",
+    "AlarmName": "ACPT OTP Instance-2 Portugal Alarm",
     "AlarmDescription": "Memory Usage >= 90%",
     "ActionsEnabled": true,
-    "AlarmActions": [],
+    "AlarmActions": ["arn:aws:sns:eu-central-1:361548929584:GIS-TEAM"],
     "MetricName": "MemoryUtilization",
     "Namespace": "System/Linux",
     "Statistic": "Average",
     "Dimensions": [
         {
             "Name": "InstanceId",
-            "Value": ""
+            "Value": "i-0db0c22da279fd2df"
         }
     ],
     "Period": 300,
